@@ -1,0 +1,14 @@
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.csprojAssemblyReference.cache
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.csproj.CoreCompileInputs.cache
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.RazorAssemblyInfo.cache
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.RazorAssemblyInfo.cs
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.AssemblyInfoInputs.cache
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.AssemblyInfo.cs
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\bin\Debug\netcoreapp2.2\RecipeBox.deps.json
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\bin\Debug\netcoreapp2.2\RecipeBox.runtimeconfig.json
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\bin\Debug\netcoreapp2.2\RecipeBox.runtimeconfig.dev.json
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\bin\Debug\netcoreapp2.2\RecipeBox.dll
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\bin\Debug\netcoreapp2.2\RecipeBox.pdb
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.RazorTargetAssemblyInfo.cache
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.dll
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\RecipeBox\obj\Debug\netcoreapp2.2\RecipeBox.pdb
