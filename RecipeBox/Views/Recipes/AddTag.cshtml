@@ -1,0 +1,17 @@
+@model RecipeBox.Models.Recipe
+
+<h2>Add a Tag</h2>
+
+<h3>Add a tag to this recipe: @Html.DisplayFor(model =>model.RecipeName)</h3>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.RecipeId)
+
+  @Html.Label("Select Tag")
+  @Html.DropDownList("TagId")
+
+  <input type="submit" value = "Save" />
+}
+
+<p>@Html.ActionLink("Back to Recipe List", "Index")</p>
