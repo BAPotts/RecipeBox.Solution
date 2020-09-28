@@ -33,3 +33,4 @@ C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\bin\Debug\netcoreapp2
 C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\obj\Debug\netcoreapp2.2\RecipeBox.Views.pdb
 C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\obj\Debug\netcoreapp2.2\RecipeBox.csproj.CopyComplete
 C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Tags\AddRecipe.g.cshtml.cs

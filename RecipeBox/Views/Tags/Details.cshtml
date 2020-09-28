@@ -1,0 +1,28 @@
+@using RecipeBox.Models
+@model RecipeBox.Models.Tag
+
+<h2>Tag Details</h2>
+
+<h2>@Html.DisplayFor(model => model.TagName)</h2>
+
+<h3>Recipes</h3>
+
+@if (@Model.Recipes.Count == 0)
+{
+  <p>There are no recipes associated with this tag</p>
+}
+
+else
+{
+  <ul>
+  @foreach(var join in Model.Recipes)
+  {
+    <li>@join.Recipe.RecipeName</li> //make these action links? 
+  }
+  </ul>
+}
+
+<p>@Html.ActionLink("Edit Tag", "Edit", new { id = Model.TagId })</p>
+<p>@Html.ActionLink("Delete Tag", "Delete", new { id = Model.TagId })</p>
+<p>@Html.ActionLink("Back to Tag List", "Index")</p>
+<p>@Html.ActionLink("Back Home", "Index", "Home")</p>
