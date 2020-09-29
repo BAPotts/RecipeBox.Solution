@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using System.Security.Claims;
 
+
 namespace RecipeBox.Controllers
 {
   public class RecipesController : Controller
@@ -61,14 +62,20 @@ namespace RecipeBox.Controllers
     }
 
     [Authorize]
-    public async Task<ActionResult> Edit(int id)
+    public async Task<ActionResult> Edit(int id) //Viewbag for rating?
     {
       var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
       var currentUser = await _userManager.FindByIdAsync(userId);
       var thisRecipe = _db.Recipes.FirstOrDefault(recipes => recipes.RecipeId == id);
       ViewBag.TagId = new SelectList(_db.Tags, "TagId", "TagName");
-      if (userId.id )
-      return View(thisRecipe);
+      if (currentUser == thisRecipe.User)
+      {
+        return View(thisRecipe);
+      }
+      else
+      {
+        return RedirectToAction("Index");
+      }
     }
 
     [HttpPost]

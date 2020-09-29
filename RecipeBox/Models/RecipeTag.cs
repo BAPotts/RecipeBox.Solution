@@ -8,4 +8,4 @@ namespace RecipeBox.Models
     public Recipe Recipe { get; set; }
     public Tag Tag { get; set; }
   }
-} 
+}
