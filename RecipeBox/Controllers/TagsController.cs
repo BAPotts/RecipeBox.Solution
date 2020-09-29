@@ -53,7 +53,7 @@ namespace RecipeBox.Controllers
     public ActionResult Edit(int id)
     {
       var thisTag = _db.Tags.FirstOrDefault(tags => tags.TagId == id);
-      ViewBag.TagId = new SelectList(_db.Tags, "TagId", "TagName");
+      ViewBag.RecipeId = new SelectList(_db.Recipes, "RecipeId", "RecipeName");
       return View(thisTag);
     }
 
@@ -85,7 +85,7 @@ namespace RecipeBox.Controllers
     }
 
     [HttpPost]
-    public ActionResult DeleteTag(int joinId)
+    public ActionResult DeleteRecipe(int joinId)
     {
       var joinEntry = _db.RecipeTag.FirstOrDefault(entry => entry.RecipeTagId == joinId);
       _db.RecipeTag.Remove(joinEntry);

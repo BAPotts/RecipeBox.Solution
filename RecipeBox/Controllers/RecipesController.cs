@@ -4,24 +4,31 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace RecipeBox.Controllers
 {
   public class RecipesController : Controller
 {
   private readonly RecipeBoxContext _db;
+  private readonly UserManager<ApplicationUser> _userManager;
   
-    public RecipesController(RecipeBoxContext db)
+    public RecipesController(UserManager<ApplicationUser> userManager, RecipeBoxContext db)
     {
+      _userManager = userManager;
       _db = db;
     }
 
     public ActionResult Index()
     {
-      List<Recipe> recipeList = _db.Recipes.ToList();
-      return View(recipeList);
+      List<Recipe> model = _db.Recipes.ToList();
+      return View(model);
     }
 
+    [Authorize]
     public ActionResult Create()
     {
       ViewBag.TagId = new SelectList(_db.Tags, "TagId", "TagName");
@@ -29,10 +36,14 @@ namespace RecipeBox.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Recipe recipe, int TagId)
+    public async Task<ActionResult> Create(Recipe recipe, int TagId)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
+      recipe.User = currentUser; 
+
       _db.Recipes.Add(recipe);
-      if (TagId != 0 )
+      if (TagId != 0)
       {
         _db.RecipeTag.Add(new RecipeTag() { TagId = TagId, RecipeId = recipe.RecipeId });
       }
@@ -49,10 +60,14 @@ namespace RecipeBox.Controllers
       return View(thisRecipe);
     }
 
-    public ActionResult Edit(int id)
+    [Authorize]
+    public async Task<ActionResult> Edit(int id)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
       var thisRecipe = _db.Recipes.FirstOrDefault(recipes => recipes.RecipeId == id);
       ViewBag.TagId = new SelectList(_db.Tags, "TagId", "TagName");
+      if (userId.id )
       return View(thisRecipe);
     }
 
@@ -68,8 +83,11 @@ namespace RecipeBox.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResult Delete(int id)
+    [Authorize]
+    public async Task<ActionResult> Delete(int id)
     {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
       var thisRecipe = _db.Recipes.FirstOrDefault(recipe => recipe.RecipeId == id);
       return View(thisRecipe);
     }
@@ -111,4 +129,3 @@ namespace RecipeBox.Controllers
     }
   }
 }
-

@@ -1,3 +1,7 @@
+@{
+  Layout = "_Layout";
+}
+
 @model RecipeBox.Models.Recipe
 
 <h2>Add a New Recipe</h2>
@@ -13,7 +17,6 @@
   @Html.LabelFor(model => model.RecipeInstructions)
   @Html.TextBoxFor(model => model.RecipeInstructions)
 
-
   @Html.Label("Select a Tag")
   @Html.DropDownList("TagId", "tags")
 
@@ -21,3 +24,5 @@
 }
 
 <p>@Html.ActionLink("Back to Recipe List", "Index")</p>
+
+<p>@Html.ActionLink("Home", "Index", "Home")</p>
