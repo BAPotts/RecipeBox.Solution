@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System;
 
+
+
 namespace RecipeBox.Models
 {
   public class Rating

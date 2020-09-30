@@ -37,3 +37,4 @@ C:\Users\potts\desktop\csharp\RecipeBox.Solution\recipebox\obj\Debug\netcoreapp2
 C:\Users\potts\Desktop\csharp\Recipebox.solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
 C:\Users\potts\Desktop\csharp\Recipebox.solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
 C:\Users\potts\Desktop\csharp\Recipebox.solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\potts\desktop\csharp\Recipebox.solution\recipebox\obj\Debug\netcoreapp2.2\Razor\Views\Recipes\CreateReview.g.cshtml.cs

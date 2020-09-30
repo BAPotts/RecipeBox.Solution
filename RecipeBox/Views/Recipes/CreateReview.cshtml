@@ -1,0 +1,17 @@
+@using System.Collections.Generic;
+@using RecipeBox.Models
+@model RecipeBox.ViewModels.RecipeRatingViewModel;
+
+<h2>Review this Recipe</h2>
+
+@using(Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.Ratings.RecipeId)
+
+  @Html.Label("Rating : ")
+  @Html.TextBoxFor(tuple => tuple.Rating.RecipeRating)
+
+  <input type="submit" value="Submit" class="btn btn-default" />
+}
+
+<p>@Html.ActionLink("Back to Recipe List", "Index")</p>

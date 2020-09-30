@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj": {}
+    "C:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj": {}
   },
   "projects": {
-    "C:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj": {
+    "C:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj",
+        "projectUniqueName": "C:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj",
         "projectName": "RecipeBox",
-        "projectPath": "C:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj",
+        "projectPath": "C:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\recipebox\\RecipeBox.csproj",
         "packagesPath": "C:\\Users\\potts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\recipebox\\obj\\",
+        "outputPath": "C:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\recipebox\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

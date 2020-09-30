@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\RecipeBox.csproj",
+  "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\RecipeBox.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -1872,87 +1872,92 @@
   "RootNamespace": "RecipeBox",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Index.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Index.cshtml",
       "TargetPath": "Views\\Recipes\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Details.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Details.cshtml",
       "TargetPath": "Views\\Tags\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Edit.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Edit.cshtml",
       "TargetPath": "Views\\Tags\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Delete.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Delete.cshtml",
       "TargetPath": "Views\\Tags\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Register.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Details.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Details.cshtml",
       "TargetPath": "Views\\Recipes\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Create.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Create.cshtml",
       "TargetPath": "Views\\Tags\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Index.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Index.cshtml",
       "TargetPath": "Views\\Account\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\AddRecipe.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\AddRecipe.cshtml",
       "TargetPath": "Views\\Tags\\AddRecipe.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Delete.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Delete.cshtml",
       "TargetPath": "Views\\Recipes\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Login.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Account\\Login.cshtml",
       "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Create.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Create.cshtml",
       "TargetPath": "Views\\Recipes\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\CreateReview.cshtml",
+      "TargetPath": "Views\\Recipes\\CreateReview.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Edit.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\Edit.cshtml",
       "TargetPath": "Views\\Recipes\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Index.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Tags\\Index.cshtml",
       "TargetPath": "Views\\Tags\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\potts\\Desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\AddTag.cshtml",
+      "FilePath": "c:\\Users\\potts\\desktop\\csharp\\Recipebox.solution\\RecipeBox\\Views\\Recipes\\AddTag.cshtml",
       "TargetPath": "Views\\Recipes\\AddTag.cshtml",
       "FileKind": "mvc"
     }

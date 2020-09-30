@@ -28,6 +28,7 @@ else
   </ul>
 }
 
+<p>@Html.ActionLink("Rate Recipe", "CreateReview", new { id = Model.RecipeId })</p>
 <p>@Html.ActionLink("Edit Recipe", "Edit", new { id = Model.RecipeId })</p>
 <p>@Html.ActionLink("Delete Recipe", "Delete", new { id = Model.RecipeId })</p>
 <p>@Html.ActionLink("Back to Recipe List", "Index")</p>

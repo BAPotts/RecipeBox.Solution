@@ -8,6 +8,8 @@ namespace RecipeBox.Models
     public DbSet<Recipe> Recipes { get; set; }
     public DbSet<Tag> Tags { get; set; }
     public DbSet<RecipeTag> RecipeTag { get; set; }
+
+    public DbSet<Rating> Ratings { get; set; }
     public RecipeBoxContext(DbContextOptions options) : base(options) {}
   }
 }

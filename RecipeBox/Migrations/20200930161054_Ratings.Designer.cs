@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecipeBox.Models;
 
 namespace RecipeBox.Migrations
 {
     [DbContext(typeof(RecipeBoxContext))]
-    partial class RecipeBoxContextModelSnapshot : ModelSnapshot
+    [Migration("20200930161054_Ratings")]
+    partial class Ratings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -155,8 +157,6 @@ namespace RecipeBox.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed");
 
-                    b.Property<int?>("RatingId");
-
                     b.Property<string>("SecurityStamp");
 
                     b.Property<bool>("TwoFactorEnabled");
@@ -173,29 +173,7 @@ namespace RecipeBox.Migrations
                         .IsUnique()
                         .HasName("UserNameIndex");
 
-                    b.HasIndex("RatingId");
-
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("RecipeBox.Models.Rating", b =>
-                {
-                    b.Property<int>("RatingId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<int>("RecipeId");
-
-                    b.Property<int>("RecipeRating");
-
-                    b.Property<string>("Review");
-
-                    b.Property<int>("UserId");
-
-                    b.HasKey("RatingId");
-
-                    b.HasIndex("RecipeId");
-
-                    b.ToTable("Ratings");
                 });
 
             modelBuilder.Entity("RecipeBox.Models.Recipe", b =>
@@ -290,21 +268,6 @@ namespace RecipeBox.Migrations
                     b.HasOne("RecipeBox.Models.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("RecipeBox.Models.ApplicationUser", b =>
-                {
-                    b.HasOne("RecipeBox.Models.Rating")
-                        .WithMany("Users")
-                        .HasForeignKey("RatingId");
-                });
-
-            modelBuilder.Entity("RecipeBox.Models.Rating", b =>
-                {
-                    b.HasOne("RecipeBox.Models.Recipe", "Recipe")
-                        .WithMany("Ratings")
-                        .HasForeignKey("RecipeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

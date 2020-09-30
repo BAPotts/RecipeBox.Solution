@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using System.Security.Claims;
+using RecipeBox.ViewModels;
 
 
 namespace RecipeBox.Controllers
@@ -55,9 +56,9 @@ namespace RecipeBox.Controllers
     public ActionResult Details(int id)
     {
       var thisRecipe = _db.Recipes
-      .Include(recipe => recipe.Tags)
-      .ThenInclude(join => join.Tag)
-      .FirstOrDefault(recipe => recipe.RecipeId == id);
+        .Include(recipe => recipe.Tags)
+        .ThenInclude(join => join.Tag)
+        .FirstOrDefault(recipe => recipe.RecipeId == id);
       return View(thisRecipe);
     }
 
@@ -134,5 +135,29 @@ namespace RecipeBox.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+    public async Task<ActionResult> CreateReview(int id) //Viewbag for rating?
+    {
+      var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+      var currentUser = await _userManager.FindByIdAsync(userId);
+      var thisRecipe = _db.Recipes.FirstOrDefault(recipes => recipes.RecipeId == id);
+      // RecipeRatingViewModel recipeRatingViewModel = new RecipeRatingViewModel();
+      ViewBag.Rating = _db.Ratings;
+      return View(thisRecipe);
+    }
+
+    [HttpPost]
+    public ActionResult CreateReview(int RecipeId, int UserId, Rating rating)
+    {
+      if (RecipeId != 0 )
+      {
+        _db.Ratings.Add(new Rating() { RecipeId = RecipeId, UserId = UserId });
+      }
+      _db.Ratings.Add(rating);
+
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
+
   }
 }
